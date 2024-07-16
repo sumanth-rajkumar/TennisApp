@@ -18,8 +18,8 @@ public class PlayerSearchService {
         }
     }
 
-    public Iterable<Player> searchPlayers(String suffix) {
-        return tree.getValuesForKeysStartingWith(suffix);
+    public Iterable<Player> searchPlayers(String character) {
+        return tree.getValuesForKeysStartingWith(character);
     }
 }
 

@@ -26,7 +26,7 @@ public class PlayerController {
     }
 
     @GetMapping("/search")
-    public Iterable<Player> searchPlayers(@RequestParam String suffix) {
-        return playerSearchService.searchPlayers(suffix);
+    public Iterable<Player> searchPlayers(@RequestParam String character) {
+        return playerSearchService.searchPlayers(character);
     }
 }
